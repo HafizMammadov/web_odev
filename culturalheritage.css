@@ -1,0 +1,32 @@
+body{
+
+    background-color: #473e66;
+    
+    }
+    .content-city h1, 
+    .content-city h2
+    {
+    text-align: center ;
+    color:#081d3d;
+    
+    }
+    .flexbox {
+        display: flex;
+        flex-direction: column; /* Öğeleri dikey olarak hizalar */
+        justify-content: center; /* Öğeleri dikeyde ortalar */
+        align-items: center; /* Öğeleri yatayda ortalar */
+        padding: 10px;
+        gap: 10px; /* Öğeler arasında 10px boşluk ekler */
+    }
+    
+    .flexbox  div {
+        background-color: #f5d7d6;
+        padding: 20px;
+        border: 2px solid none;
+        text-align: justify; 
+        width: 65%;
+        border-radius: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        color:#081d3d;
+    }

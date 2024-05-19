@@ -1,0 +1,101 @@
+body{
+
+background-color: #473e66;
+
+}
+.content-city h1, 
+.content-city h2
+{
+text-align: center ;
+color:#081d3d;
+
+}
+.flexbox {
+    display: flex;
+    flex-direction: column; /* Öğeleri dikey olarak hizalar */
+    justify-content: center; /* Öğeleri dikeyde ortalar */
+    align-items: center; /* Öğeleri yatayda ortalar */
+    padding: 10px;
+    gap: 10px; /* Öğeler arasında 10px boşluk ekler */
+}
+
+.flexbox  div {
+    background-color: #f5d7d6;
+    padding: 20px;
+    border: 2px solid none;
+    text-align: justify; 
+    width: 65%;
+    border-radius: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    color:#081d3d;
+}
+.footer{
+    background-color: black;
+    color: beige;
+    text-align: center;
+    margin: 0px;
+    padding: 4px;
+    font-size: 20px;
+
+
+}
+.slider
+{
+    position: relative;
+width: 500px;
+height: 300px;
+margin:auto;
+overflow: hidden;
+
+}
+.slider-content{
+position: absolute;
+width: 1000%;
+left:0;
+
+}
+.slider img{
+    width: 10%;
+    width: 500px;
+    height: 300px;
+    float: left;
+animation:  slide 20s infinite;
+
+
+}
+@keyframes slide{
+
+
+    0%{
+        transform: translate(0px);
+    }
+    10%{
+        transform: translate(-500px);
+    }
+    20%{
+        transform: translate(-500px);
+    }
+    30%{
+        transform: translate(-1000px);
+    }
+    40%{
+        transform: translate(-1000px);
+    }
+    50%{
+        transform: translate(-1500px);
+    }
+    60%{
+        transform: translate(-1500px);
+    }
+    70%{
+        transform: translate(-2000px);
+    
+    }
+    80%{
+        transform: translate(-2000px);
+    }
+    90%{
+        transform: translate(0px);
+    }
+}

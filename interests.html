@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLGİ ALANLARIM</title>
+    <link rel="stylesheet" href="navigation.css">    <link rel="stylesheet" href="interests.css">  
+</head>
+<body>  
+    <div class="container">
+        <section class="page-top">
+            <nav class="navigation">
+                <!-- Navigation Bar -->
+                <ul>
+                    <li><a href="girisAnasayfa.html">HAKKIMDA</a></li>
+                    <li><a href="egitim.html">ÖZGEÇMİŞ</a></li>
+                    <li><a href="city.html">ŞEHİR</a></li>
+                    <li><a href="culturalheritage.html">KÜLTÜREL MİRAS</a></li>
+                    <li><a class="active" href="interests.html">İLGİ ALANLARIM</a></li>
+                    <li><a href="zlogin.html">LOGİN</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+            <input class="input" id="input" placeholder="Kitap giriniz...">
+            <button class="button" onclick="getbooks()">Kitabı Getir</button>
+            <br>
+            <div id="output"></div>
+        </section>
+    </div>
+
+    <script>
+        function getbooks() {
+            document.getElementById('output').innerHTML = "";
+            fetch("https://openlibrary.org/search.json?q=" + document.getElementById("input").value)
+                .then(response => response.json())
+                .then(data => {
+                    for (var i = 0; i < 10; i++) {
+                        document.getElementById("output").innerHTML += "<h2>" + data.docs[i].title + "</h2><p>" + data.docs[i].author_name[0] + "</p><img src='https://covers.openlibrary.org/b/isbn/" + data.docs[i].isbn[0] + "-M.jpg'><br>";
+                    }
+                });
+        }
+    </script>
+</body>
+</html>

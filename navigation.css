@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+.navigation {
+    padding: 0;
+    margin-left: 0;
+
+}
+
+.navigation ul {
+    background: #072e33;
+    padding: 15px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li {
+    padding-right: 5%;
+}
+
+.navigation ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active {
+    background-color: #054347;
+}

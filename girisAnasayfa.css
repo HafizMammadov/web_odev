@@ -1,0 +1,74 @@
+/*CSS DOCUMENT*/
+body {
+    background-color: #0d4264;
+    margin: 0;
+}
+
+.container {
+    background: url('resimler/yalnızlık-düzeltilmiş.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    text-align: center;
+   color: bisque;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    user-select: none;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    }
+    .center h1{
+        font-size: 70px;
+        width: 900px;
+    }
+    .center h2{
+        font-size: 50px;
+        width: 850px;
+    }
+     .buttons button{
+        text-align: center;
+        background-color: bisque;
+        border: 1px solid white;
+        font-size: 18px;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+      cursor: pointer;
+
+    }
+    .buttons button a{
+        color: #072e33;
+        text-decoration: none;
+    }
+
+.page-top header {
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 20px;
+}
+ 
+
+.content {
+    text-align: justify;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    font-size: large;
+    color: #efcc94;
+    border: 1px solid antiquewhite;
+    background: #0d4364; 
+
+}.content h3{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #efcc94;
+}

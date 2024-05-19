@@ -1,0 +1,98 @@
+/*CSS DOCUMENT*/
+body {
+   
+    margin: 0px !important;
+    color: black;
+   background-color: aliceblue;
+}
+
+
+ .page-top-header
+ {
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: 20px;
+ }
+ .ids p{
+  
+ text-align: justify;
+
+}
+.ids a{  
+    color: rgb(166, 7, 210);
+   text-decoration: double;
+   padding:10px;
+   font-size: 18px;
+   margin: 0px;
+}
+
+.ids a:hover{
+   color:grey;
+}
+
+ .page-left
+ {
+    height: 100vh;
+    width: 34%;
+    padding:0px;
+    float: left;
+    font-size: 17px;
+    background-color: rgba(190, 170, 237, 0.622);
+    border: 1px solid #ccc;
+    border-radius: 15px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .page-left .mailto{
+    text-decoration:underline;
+    color: black;
+ }
+
+
+ .page-left p,
+ .page-left h4{
+    padding-left: 10px ;
+    padding-right: 10px ;
+  
+}
+
+ .page-right{
+    margin: 0px;
+    height: 100vh;
+    float: left;
+    width: 65%;
+    background-color: rgba(59, 76, 90, 0.51);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: justify;
+     border: 1px solid  rgba(59, 76, 90, 0.51);
+    border-radius: 15px;
+    box-shadow: 2px rgba(0, 0, 0, 0.1);
+
+ 
+} 
+
+.page-right p,
+.page-right h3,
+.page-right li
+{
+    padding-left: 10px ;
+    padding-right: 10px ;
+   
+}
+
+
+hr {
+    border: none;
+    height: 2px !important ;
+    background-color: rgb(10, 10, 10);
+    margin-left: 10px ;
+    margin-right: 10px ;
+    border-radius: 10px ;
+}
+
+.buyuk-nokta {
+    font-size: 50px; 
+  }
+
+ 
